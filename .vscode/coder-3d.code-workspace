@@ -1,0 +1,33 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "dev",
+				"command": "npm run dev",
+				"request": "launch",
+				"type": "node-terminal"
+			},
+			{
+				"name": "build",
+				"command": "npm run build",
+				"request": "launch",
+				"type": "node-terminal"
+			},
+			{
+				"name": "lint",
+				"command": "npm run lint",
+				"request": "launch",
+				"type": "node-terminal"
+			}
+		]
+	}
+}

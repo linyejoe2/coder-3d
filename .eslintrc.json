@@ -1,0 +1,43 @@
+{
+    "globals": {
+        "JSX": "readonly"
+    },
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "ignorePatterns": [ "./archive" ],
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "unused-imports"
+    ],
+    "rules": {
+        "space-before-function-paren": [ "error", { // function 命名風格
+                "anonymous": "always",
+                "named": "never",
+                "asyncArrow": "always"
+            } ],
+        "unused-imports/no-unused-imports": "error", // 沒有未使用的 imports 需搭配套件 eslint-plugin-unused-imports
+        "no-undef": "warn",
+        "react/react-in-jsx-scope": "off",
+        "quotes": "warn"
+    }
+}
